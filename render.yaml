@@ -1,0 +1,16 @@
+# Render Blueprint for the game server. The client is deployed separately on GitHub Pages.
+# Replace YOUR-GITHUB-USER with your GitHub user name. The origin is the Pages site, with no path.
+services:
+  - type: web
+    name: bowman-2-server
+    runtime: docker
+    plan: free
+    healthCheckPath: /health
+    autoDeploy: true
+    envVars:
+      - key: BOWMAN_TRUST_PROXY
+        value: "1"
+      - key: BOWMAN_ALLOWED_ORIGINS
+        value: https://anantojha.github.io
+      - key: BOWMAN_MAX_CONNECTIONS
+        value: "200"
