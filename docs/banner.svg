@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="1200" height="320" role="img" aria-labelledby="t d">
+  <title id="t">Bowman 2</title>
+  <desc id="d">Two stickman archers on grassy hills aiming at each other across a sunny valley. Drag back. Aim. Outshoot your rival.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5aa9e6"/><stop offset=".7" stop-color="#bfe3f7"/><stop offset="1" stop-color="#eaf7ff"/>
+    </linearGradient>
+    <radialGradient id="sun" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#fff6c2"/><stop offset=".45" stop-color="#fff6c2"/><stop offset="1" stop-color="#fff6c2" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="dirt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7a5a38"/><stop offset="1" stop-color="#3e2b1a"/>
+    </linearGradient>
+    <g id="cloud" fill="#fff" opacity=".92">
+      <circle cx="0" cy="0" r="16"/><circle cx="20" cy="-8" r="21"/><circle cx="46" cy="0" r="16"/><rect x="0" y="0" width="46" height="16" rx="8"/>
+    </g>
+    <g id="archer" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <ellipse cx="0" cy="2" rx="17" ry="4" fill="#15202b" opacity=".18" stroke="none"/>
+      <g stroke="#15202b" stroke-width="4">
+        <line x1="0" y1="-52" x2="0" y2="-24"/>
+        <line x1="0" y1="-24" x2="-8" y2="0"/><line x1="0" y1="-24" x2="8" y2="0"/>
+        <line x1="0" y1="-46" x2="26" y2="-54"/><line x1="0" y1="-46" x2="6" y2="-53"/>
+      </g>
+      <path d="M26 -84 Q46 -54 26 -24" stroke="#8a5a2b" stroke-width="3.6"/>
+      <path d="M26 -84 L6 -54 L26 -24" stroke="#f4f4f4" stroke-width="1.6"/>
+      <line x1="6" y1="-54" x2="50" y2="-54" stroke="#5b3a1e" stroke-width="2.6"/>
+      <path d="M50 -58 L58 -54 L50 -50 Z" fill="#d9dde2" stroke="none"/>
+      <circle cx="0" cy="-62" r="11" fill="#f7f0e4" stroke="#15202b" stroke-width="4"/>
+      <line x1="-10.5" y1="-65" x2="10.5" y2="-65" stroke="currentColor" stroke-width="4"/>
+      <circle cx="5" cy="-62" r="1.7" fill="#15202b" stroke="none"/>
+    </g>
+  </defs>
+
+  <rect width="1200" height="320" fill="url(#sky)"/>
+  <circle cx="1060" cy="62" r="64" fill="url(#sun)"/>
+  <circle cx="1060" cy="62" r="30" fill="#fff6c2"/>
+  <use href="#cloud" transform="translate(150 62)"/>
+  <use href="#cloud" transform="translate(470 40) scale(.8)"/>
+  <use href="#cloud" transform="translate(820 96) scale(1.1)"/>
+  <use href="#cloud" transform="translate(1110 128) scale(.7)"/>
+
+  <path d="M0 214 L110 150 L230 204 L350 140 L480 208 L570 168 L700 218 L830 148 L965 212 L1085 158 L1200 208 L1200 320 L0 320Z" fill="#9db9d6"/>
+  <path d="M0 250 L130 196 L260 246 L420 186 L560 252 L700 206 L860 258 L1000 200 L1200 248 L1200 320 L0 320Z" fill="#7fa1c2"/>
+
+  <path id="ground" d="M0 272 C60 270 110 268 190 268 C270 268 310 286 410 292 C510 298 570 286 670 276 C770 266 850 238 940 236 C1000 235 1040 236 1100 236 C1150 236 1175 233 1200 231 L1200 320 L0 320Z" fill="url(#dirt)"/>
+  <path d="M0 272 C60 270 110 268 190 268 C270 268 310 286 410 292 C510 298 570 286 670 276 C770 266 850 238 940 236 C1000 235 1040 236 1100 236 C1150 236 1175 233 1200 231" fill="none" stroke="#3f9a45" stroke-width="9" stroke-linecap="round"/>
+  <path d="M0 270 C60 268 110 266 190 266 C270 266 310 284 410 290 C510 296 570 284 670 274 C770 264 850 236 940 234 C1000 233 1040 234 1100 234 C1150 234 1175 231 1200 229" fill="none" stroke="#69c25f" stroke-width="4" stroke-linecap="round"/>
+  <g fill="#000" opacity=".12">
+    <ellipse cx="300" cy="305" rx="30" ry="6"/><ellipse cx="520" cy="312" rx="40" ry="6"/><ellipse cx="760" cy="296" rx="34" ry="6"/><ellipse cx="1000" cy="290" rx="38" ry="6"/><ellipse cx="90" cy="300" rx="28" ry="6"/>
+  </g>
+
+  <use href="#archer" transform="translate(150 269) scale(1.35)" color="#3b82e0"/>
+  <use href="#archer" transform="translate(1052 236) scale(-1.35 1.35)" color="#e0524a"/>
+
+  <path d="M236 196 Q610 -120 1000 168" fill="none" stroke="#fff" stroke-width="4.5" stroke-linecap="round" stroke-dasharray="1 11" opacity=".9"/>
+  <path d="M1000 168 l-16 -3 l5 -14 z" fill="#fff" transform="rotate(14 1000 168)"/>
+
+  <g text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" stroke-linejoin="round" paint-order="stroke" stroke="#1b2a3a">
+    <text x="600" y="180" font-size="84" font-weight="900" letter-spacing="7" fill="#fff" stroke-width="9">BOWMAN <tspan fill="#f2c14e">2</tspan></text>
+    <text x="600" y="222" font-size="24" font-weight="700" fill="#fff" stroke-width="5">Drag back. Aim. Outshoot your rival.</text>
+  </g>
+</svg>
