@@ -240,3 +240,4 @@ This project was created **100% by free AI coding tools (Claude)**: the game rul
 [MIT](LICENSE). Play with it, learn from it, break it, remix it.
 
 Inspired by the stickman game *Bowman 2*. Not affiliated with it.
+
